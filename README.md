@@ -10,5 +10,3 @@ Example Flickr gallery IDs for testing:
 If you don't put anything into the "max gallery size" input field it'll default to 10 photos.
 
 'Settings' button in the main menu isn't implemented so clicking it won't have any effect.
-
-Perhaps I should add ///summaries for all the stuff because it seems that I forgot about that.
