@@ -4,6 +4,9 @@ using GalleryTest.WebAPI.Models;
 
 namespace GalleryTest.Gallery
 {
+    /// <summary>
+    /// Controls the window that pops up when you click on a thumbnail and displays a bigger image with info
+    /// </summary>
     public class PhotoViewController : MonoBehaviour
     {
         [SerializeField] private Image photoImage;
@@ -15,6 +18,10 @@ namespace GalleryTest.Gallery
 
         private Vector2 imageSize;
 
+        /// <summary>
+        /// Activates the photo view window with given photo and its info
+        /// </summary>
+        /// <param name="photoDownloaded">Already downloaded photo data</param>
         public void OpenPanel(PhotoDownloaded photoDownloaded)
         {
             // if the panel is already open we don't consider the click on another photo underneath it
@@ -32,6 +39,9 @@ namespace GalleryTest.Gallery
             gameObject.SetActive(true);
         }
 
+        /// <summary>
+        /// Deactivates the photo view window
+        /// </summary>
         public void ClosePanel()
         {
             gameObject.SetActive(false);

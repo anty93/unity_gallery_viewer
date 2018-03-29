@@ -2,6 +2,9 @@
 
 namespace GalleryTest.WebAPI.Models
 {
+    /// <summary>
+    /// Contains basic photo data necessary to construct its direct url
+    /// </summary>
     public class PhotoMetaData
     {
         [JsonProperty("id")]

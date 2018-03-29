@@ -3,6 +3,9 @@ using UnityEngine.EventSystems;
 
 namespace GalleryTest.MainMenu
 {
+    /// <summary>
+    /// Base class for all main menu buttons, implements hovering and clicking
+    /// </summary>
     public class MainMenuButton : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
     {
         private UnityEngine.UI.Text buttonText;
@@ -11,7 +14,8 @@ namespace GalleryTest.MainMenu
         private int highlightedTextSize;
         private float currentTextSize;
         private float lerpSpeed;
-        
+
+        #region implementation of IPointerHandlers
         public virtual void OnPointerDown(PointerEventData eventData)
         {
             // here we could play a sound or something that would apply to all buttons
@@ -26,6 +30,7 @@ namespace GalleryTest.MainMenu
         {
             DisableHighlight();
         }
+        #endregion
 
         private void Awake()
         {

@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 namespace GalleryTest.Gallery
 {
+    /// <summary>
+    /// Simple text 'animation'
+    /// </summary>
     public class StatusTextController : MonoBehaviour
     {
         [SerializeField] private string baseText;
@@ -12,11 +15,17 @@ namespace GalleryTest.Gallery
         private int currentDots;
         private float lastDotChange;
 
+        /// <summary>
+        /// Diisables the Status Text
+        /// </summary>
         public void Disable()
         {
             text.enabled = false;
         } 
 
+        /// <summary>
+        /// Enables the Status Text with dot animation
+        /// </summary>
         public void Enable()
         {
             text.enabled = true;

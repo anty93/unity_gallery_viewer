@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 namespace GalleryTest.Gallery
 {
+    /// <summary>
+    /// Controls the gallery screen and window
+    /// </summary>
     public class GalleryController : MonoBehaviour
     {
         [SerializeField] private InputField galleryIdInput;

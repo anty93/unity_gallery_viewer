@@ -5,6 +5,9 @@ using GalleryTest.WebAPI.Models;
 
 namespace GalleryTest.Gallery
 {
+    /// <summary>
+    /// Controls small photo thumbnails that are placed in ScrollView content
+    /// </summary>
     public class PhotoThumbController : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField] private Image photoThumbnail;
@@ -16,6 +19,10 @@ namespace GalleryTest.Gallery
         private Vector2 imageSize;
         private PhotoDownloaded photoDownloadedData;
 
+        /// <summary>
+        /// Loads the Texture and meta data of a Photo into this thumbnail
+        /// </summary>
+        /// <param name="photoDownloaded">Already downloaded photo data</param>
         public void Initialize(PhotoDownloaded photoDownloaded)
         {
             photoDownloadedData = photoDownloaded;

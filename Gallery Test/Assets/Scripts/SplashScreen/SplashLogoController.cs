@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 namespace GalleryTest.SplashScreen
 {
+    /// <summary>
+    /// Basic logo splash screen. Implements fading in and out of a logo image, after it fades out completly the app transitions to the next screen.
+    /// </summary>
     public class SplashLogoController : MonoBehaviour
     {
         private enum FadeStatus
